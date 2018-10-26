@@ -13,14 +13,20 @@
     "react-stripe-elements": "^2.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "aws s3 sync build/ s3://notes-app-client-archeido --delete",
-    "postdeploy": "aws cloudfront create-invalidation --distribution-id ESK3WUMBMR29L --paths '/*'"
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test --env=jsdom",
+  "eject": "react-scripts eject"
   },
+  // "scripts": {
+  //   "start": "react-scripts start",
+  //   "build": "react-scripts build",
+  //   "test": "react-scripts test",
+  //   "eject": "react-scripts eject",
+  //   "predeploy": "npm run build",
+  //   "deploy": "aws s3 sync build/ s3://notes-app-client-archeido --delete",
+  //   "postdeploy": "aws cloudfront create-invalidation --distribution-id ESK3WUMBMR29L --paths '/*'"
+  // },
   "eslintConfig": {
     "extends": "react-app"
   },
