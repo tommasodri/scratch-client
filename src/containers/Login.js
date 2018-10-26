@@ -3,7 +3,6 @@ import { FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import { Auth } from "aws-amplify";
 import LoaderButton from "../components/LoaderButton";
 import "./Login.css";
-import { Link } from "react-router-dom";
 
 export default class Login extends Component {
     constructor(props) {
@@ -62,7 +61,6 @@ export default class Login extends Component {
 				  type="password"
 				/>
 			</FormGroup>
-            <Link to="/login/reset">Forgot password?</Link>
 			<LoaderButton
 				block
 				bsSize="large"
